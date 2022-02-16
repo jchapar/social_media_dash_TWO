@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+// Font Family
+$font-family: "Inter", sans-serif;
+
+//Dark Theme
+html {
+  --primary-bg: hsl(230, 17%, 14%); //BG
+  --top-bg-color: hsl(232, 19%, 15%); //(Top BG Pattern)
+  --primary-card-bg: hsl(228, 28%, 20%); //(Card BG)
+  --blue-text: hsl(228, 34%, 66%); //(Text)
+  --white-text: hsl(0, 0%, 100%); //(Text)
+  --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+//Light Theme
+html[data-theme="light"] {
+  --primary-bg: hsl(0, 0%, 100%);
+  --top-bg-color: hsl(225, 100%, 98%);
+  --primary-card-bg: hsl(227, 47%, 96%);
+  --blue-text: hsl(228, 12%, 44%);
+  --white-text: hsl(230, 17%, 14%);
+  --toggle: hsl(230, 22%, 74%);
+}
+
+// Variables
+$lime-green: hsl(163, 72%, 41%);
+$bright-red: hsl(356, 69%, 56%);
+
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+// $instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$instagram: hsl(329, 70%, 58%);
+$youTube: hsl(348, 97%, 39%);
+
+// Theme Smooth Transition For All HTML Elements
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+  transition: all 0.5s !important;
+  transition-delay: 0 !important;
+}

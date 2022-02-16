@@ -1,0 +1,36 @@
+@media (min-width: 900px) {
+  .container {
+    max-width: 144rem;
+
+    // Header
+    .header {
+      display: flex;
+      justify-content: space-between;
+      .header__text-container {
+        border: none;
+      }
+      .header__theme-toggle {
+        p {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    // Summary
+    .summary {
+      &.grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    // Overview
+    .overview {
+      .overview-header {
+      }
+
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+}
